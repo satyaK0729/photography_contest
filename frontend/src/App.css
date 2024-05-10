@@ -1,0 +1,475 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  ::-webkit-scrollbar {
+    width: 0; /* Set scrollbar width to zero to hide it */
+    height: 0; /* Set scrollbar height to zero to hide it */
+}
+/* Hide scrollbar in Mozilla Firefox */
+scrollbar-width: none; /* Remove scrollbar style */
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  height: 10vh;
+  background-color: #ffffff;
+}
+.navbar_logo{
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  margin: 0px 10px;
+}
+/* Styles for the left section */
+.navbar_left {
+  width: 25%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar_left h1 {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: yellowgreen;
+}
+
+/* Styles for the center section */
+.navbar_center {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: #8a8a88;
+  font-size: 15px;
+  margin: 0px 10px;
+  transition: color 0.3s ease;
+}
+.navbar_link:hover{
+  font-weight: bold;
+  color: lightblue;
+}
+
+
+/* Styles for the right section */
+.navbar_right {
+  display: flex;
+width: 25%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar_button_login {
+  padding: 5px;
+  width: 80px;
+  margin: 0px 10px;
+  border: none;
+  background-color:yellowgreen;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar_button_register {
+  padding: 5px;
+  width: 80px;
+  margin: 0px 10px;
+  border: none;
+  background-color: #ffbd11;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* home css */
+.home{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+.home_part_1{
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_part_2{
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_part_1 h1{
+  color:green;
+  word-wrap: break-word;
+  max-width: 80%;
+  text-align: center;
+  margin: 10px 0px;
+  font-weight: 25px;
+}
+.home_part_1 p{
+  color: #8a8a88;
+  font-weight: 15px;
+  margin: 10px 0px;
+}
+.home_buttons{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_buttons_button1{
+  padding: 8px;
+  background-color: #e03346;
+  color: white;
+  outline:none;
+  border :none;
+  border-radius: 5px;
+  margin: 0px 8px
+}
+.home_buttons_button2{
+  padding: 8px;
+  width: 100px;
+  color: white;
+  background-color: #232329;
+cursor: pointer;
+  outline:none;
+  border :none;
+  border-radius: 5px;
+  margin: 0px 8px
+}
+/* register css */
+.register{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+.register form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  padding: 20px 0px;
+}
+.register input{
+  width: 60%;
+  margin: 10px 0px;
+  padding: 10px;
+  border: none;
+  border-bottom:1px solid #232329 ;
+}
+.register button{
+  width: 100px;
+  height: auto;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  border:none;
+  cursor: pointer;
+  background-color: blue;
+}
+/* profile page css */
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile h2{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.profile_details{
+  width: 80%;
+  display: flex;
+  margin: 10px 0px;
+  flex-direction: column;
+
+}
+.profile_details div{
+  margin: 10px 0px;
+  color: #232329;
+  margin-left: 10px;
+}
+.profile_details p{
+  width: 100%;
+  margin: 10px 0px;
+  color: #5b0bb1;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 1px solid #232329;
+}
+.create_contest{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  align-items: center;
+}
+.create_contest h1{
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.create_contest input{
+  margin: 15px 0px;
+  font-size: 20px;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #232329;
+  outline: none;
+  margin-left: 10px;
+}
+.create_contest label{
+  color: #5b0bb1;
+  
+}
+.form_input_item{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+.form_button{
+  width: 130px;
+  height: auto;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  border:none;
+  cursor: pointer;
+  background-color: #5b0bb1;
+
+}
+.bannerImg{
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+/* contest page css */
+.contests{
+  display: flex;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.contests h3{
+  text-align: center;
+  margin: 10px 0px;
+  color: #232329;
+  text-align: center;
+}
+.contests h1{
+  font-size: 20px;
+  color: #232329;
+  text-align: center;
+}
+.contests h4{
+  font-size: 15px;
+  color:blue;
+  margin: 10px 0px;
+  text-align: center;
+}
+.contest_part_1{
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px ;
+}
+.contest_part_2{
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px ;
+}
+.contest_part_3{
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px ;
+}
+.contest_card{
+  height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px ;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid #232329;
+}
+.contest_card img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+.contest_card h3{
+  color: #5b0bb1;
+  margin: 10px 0px;
+  border-bottom: 1px solid #232329;
+} 
+.contest_card p{
+  color: #232329;
+  margin: 10px 0px;
+  width: 95%;
+  word-wrap: break-word;
+}
+.contest_btn{
+  width: 100%;
+  height: auto;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  border:none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #232329;
+}
+.contest_card_det{
+  background-color: #5b0bb1;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius:5px ;
+  text-align: center;
+}
+/* contest details css */
+.contest_detail{
+  width: 90%;
+  margin: 0px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contest_detail h1{
+  color: #5b0bb1;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.contest_detail_img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  margin: 10px 0px;
+}
+.contest_detail_info{
+  margin: 10px 0px;
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  width: 100%;
+  color: #5b0bb1;
+  flex-direction: column;
+}
+.contest_detail p{
+  display: flex;
+  color: #232329;
+}
+.contest_detail_part{
+  width: 130px;
+  background-color: #232329;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+  margin: 10px 0px;
+}
+.participate_img_user{
+  width: 100%;
+  height: auto;
+}
+.participate_btn{
+  width: 120px;
+  padding: 10px;
+  background-color: #232329;
+  color: white;
+  align-self: flex-end;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.contest_images{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  
+}
+.contest_images_item{
+  width: 95%;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #a0a0ad;
+
+}
+.contest_images_img{
+  width: 100%;
+  align-self: center;
+}
+.contest_images_item p{
+  margin: 10px;
+}
+.contest_image_like{
+  color: #5b0bb1;
+  font-size: 30px;
+  align-self: flex-end;
+  margin: 10px;
+  cursor: pointer;
+}
+.error_page{
+  width: 100%;
+  min-height: 90vh;
+  font-size: 20px;
+  color: #232329;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
